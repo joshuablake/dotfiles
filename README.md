@@ -1,5 +1,5 @@
 # dotfiles
-Based on [https://medium.com/toutsbrasil/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b](this article's) management technique.
+Based on [this article's](https://medium.com/toutsbrasil/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b) management technique.
 
 ## Setting up on new PC
 
