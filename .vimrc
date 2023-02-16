@@ -60,7 +60,7 @@ Plug 'nvie/vim-flake8'
 Plug 'https://github.com/NLKNguyen/papercolor-theme'
 Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 Plug 'chrisbra/csv.vim'
-Plug 'dense-analysis/ale'
+"Plug 'dense-analysis/ale'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
@@ -120,3 +120,12 @@ set hidden
 
 " R
 let R_start_libs = 'base,stats,graphics,grDevices,utils,methods,tidyverse'
+
+" Better split navigation config
+" https://thoughtbot.com/blog/vim-splits-move-faster-and-more-naturally
+nnoremap <C-J> <C-W>J<CR>
+nnoremap <C-K> <C-W>K<CR>
+nnoremap <C-L> <C-W>L<CR>
+nnoremap <C-H> <C-W>H<CR>
+set splitbelow
+set splitright
