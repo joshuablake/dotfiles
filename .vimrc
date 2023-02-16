@@ -27,10 +27,10 @@ inoremap <C-l> <Esc>[sz=1<Enter><c-o>a
 " Plugins
 call plug#begin()
 
-Plug 'sirver/ultisnips'
-    let g:UltiSnipsExpandTrigger = '<tab>'
-	let g:UltiSnipsJumpForwardTrigger = '<tab>'
-    let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+"Plug 'sirver/ultisnips'
+    "let g:UltiSnipsExpandTrigger = '<tab>'
+	"let g:UltiSnipsJumpForwardTrigger = '<tab>'
+    "let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 Plug 'lervag/vimtex'
 	let g:tex_flavor='latex'
