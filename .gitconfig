@@ -5,6 +5,7 @@
 	email = joshua.blake@mrc-bsu.cam.ac.uk
 [core]
 	editor = vim
+	autocrlf = true
 [push]
 	default = current
 [merge]
