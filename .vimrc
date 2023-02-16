@@ -120,3 +120,6 @@ set hidden
 
 " R
 let R_start_libs = 'base,stats,graphics,grDevices,utils,methods,tidyverse'
+
+" Normal backspace behaviour
+set backspace=indent,eol,start
