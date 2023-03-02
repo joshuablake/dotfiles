@@ -194,3 +194,5 @@ LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
 export DISPLAY=localhost:0.0
 
 module load vim-8.0.0503-gcc-5.4.0-4qx4yxm
+module load gcc
+module load R/4.2.0
