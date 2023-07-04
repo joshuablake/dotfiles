@@ -191,6 +191,22 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 # Use a reasonable ls colour
 LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
 
-module load vim-8.0.0503-gcc-5.4.0-4qx4yxm
-module load gcc
-module load R/4.2.0
+# Setup xming if using WSL
+if [ -f "/proc/sys/fs/binfmt_misc/WSLInterop" ]; then
+	export DISPLAY=localhost:0.0
+fi
+
+# Load required modules on HPC
+if command -v module &> /dev/null
+then
+	module load gcc
+fi
+
+# Configure pyenv if it's installed
+if command -v pyenv &> /dev/null
+then
+	export PATH="$HOME/.pyenv:$HOME/.pyenv/bin:$PATH"
+	eval "$(pyenv init -)"
+	eval "$(pyenv virtualenv-init -)"
+fi
+
