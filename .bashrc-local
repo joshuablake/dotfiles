@@ -199,7 +199,9 @@ fi
 # Load required modules on HPC
 if command -v module &> /dev/null
 then
-	module load gcc
+	module load gcc/11
+	module load R/4.2.0
+	module load pandoc
 fi
 
 # Configure pyenv if it's installed
@@ -209,4 +211,3 @@ then
 	eval "$(pyenv init -)"
 	eval "$(pyenv virtualenv-init -)"
 fi
-
