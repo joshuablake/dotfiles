@@ -15,3 +15,8 @@
 	tree = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 [credential]
 	helper = cache
+[safe]
+	directory = /mnt/g/My Drive/Uni/PhD/thesis
+	directory = /mnt/g/My Drive/python-playground/2023-08_lab-leaks
+[init]
+	defaultBranch = main
